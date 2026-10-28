@@ -1,0 +1,20 @@
+{
+  "name": "health-diary-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --no-warnings --env-file-if-exists=.env src/index.js",
+    "dev": "node --no-warnings --watch --env-file-if-exists=.env src/index.js",
+    "test": "node --no-warnings --test \"test/*.test.js\""
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.0"
+  }
+}
